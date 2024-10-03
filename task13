@@ -1,0 +1,24 @@
+Steps for creating a VM in azure cloud
+
+1. Login to your Azure cloud account
+2. Click on create new virtual machine
+3. Fill details. 
+   3.1 Give name of your VM. 
+   3.2 Select the desired VM image file. (For eg: Ubuntu Server 24.04 LTS – Gen2)
+   3.3 Select image size. (select a standard B1s size)
+   3.4 Allocate resources.
+   3.5 Generate new key pair.
+   3.6 download the newly generated private key.  
+4. Click on "Review + Create".
+5. After creating, enable the ICMP Protocol.
+
+Now go to your terminal (kali linux) 
+
+1. Login in VM using ssh port using 
+   `ssh i <path to the private key> <username>@<ip address of the VM>`
+2. Try to ping your local machine. 
+3. Now in new tab try to ping the VM.
+
+After finishing  
+
+1. From the 'Overview' tab in the Azure Cloud, Click on 'Delete' to delete the VM
